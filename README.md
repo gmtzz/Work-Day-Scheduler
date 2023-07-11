@@ -1,15 +1,19 @@
-# Work-Day-Scheduler
-This is a workday scheduler code refactor for the Uconn coding bootcamp. 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours of 9am to 5pm
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+WorkDay Scheduler
+Description
+This Work Day scheduler is used to schedule different appointments, tasks, assignments,  etc. The user is prompted to write the task in the textbox allocated time frame. The user has the option to save the text using the right side button. The text is then saved to local storage. Therefore when the user refreshes the page, the content in the workday scheduler is not lost. The scheduler is also displays the current date.
+
+Process for App Deployment
+For Javascript quiz I used Javascript to make dynamic changes to the corresponding HTML document.
+
+How does it work?
+First the app is displayed in an HTML document that has the purpose of quizzing the user from a range of questions.
+Once the user navigates to the gray text box in the body of the page, the user is prompted to write the task in the textbox allocated time frame. 
+The user has the option to save the text using the right side button.
+The text is then saved to local storage. Therefore when the user refreshes the page, the content in the workday scheduler is not lost. 
+The workday scheduler can be found in Github pages, provided below is the link to the application. 
+
+The App in Action
+demo video:
+
+Sources
+For this assignment, I used past assignments from module 4 and guidance from my tutor. I also referenced the readme format from my past password generator assignment. 
