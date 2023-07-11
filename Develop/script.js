@@ -14,6 +14,29 @@ $(function () {
         localStorage.setItem(time,toDoTextBox)
     })
 
+    for (var i=9;i<=17;i++){
+        $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`)) 
+
+    }
+    function colorUpdater(){
+
+        var currentTime = dayjs().hour()
+        console.log(currentTime)
+        $(".time-block").each(function(){
+            var timeBlock = parseInt($(this).attr("id").split("-")[1])
+            console.log(timeBlock)
+
+            if(timeBlock < currentTime){
+                $(this).addClass("past")
+            } else if (timeBlock===currentTime){
+                $(this).addClass("present")
+            } else {
+                $(this).addClass("future")
+            }
+        })
+    }
+    colorUpdater()
+    $("#currentDay").text(dayjs().format('DD/MM/YYYY'))
 
 
     //
